@@ -1,0 +1,47 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Tue Jan  5 13:31:48 2016
+| Host         : G550-Linux running 64-bit Linux Mint 17.3 Rosa
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_gpio_led_axi_lite_LFSR_PRNG_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_gpio_led_axi_lite_LFSR_PRNG_0_0 (university.obuda:user:axi_lite_LFSR_PRNG:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Tue Jan  5 13:20:58 2016
+| Host         : G550-Linux running 64-bit Linux Mint 17.3 Rosa
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_gpio_led_axi_lite_LFSR_PRNG_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_gpio_led_axi_lite_LFSR_PRNG_0_0 (university.obuda:user:axi_lite_LFSR_PRNG:1.0) from (Rev. 7) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_gpio_led_axi_lite_LFSR_PRNG_0_0'. These changes may impact your design.
+
+
+-upgrade has removed port 'o_number'
+

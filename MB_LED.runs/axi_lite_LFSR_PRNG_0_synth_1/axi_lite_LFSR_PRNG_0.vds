@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jan  5 13:31:53 2016
+# Process ID: 20370
+# Current directory: /mnt/seagate/Development/FPGA/MB_LED/MB_LED.runs/axi_lite_LFSR_PRNG_0_synth_1
+# Command line: vivado -log axi_lite_LFSR_PRNG_0.vds -mode batch -messageDb vivado.pb -notrace -source axi_lite_LFSR_PRNG_0.tcl
+# Log file: /mnt/seagate/Development/FPGA/MB_LED/MB_LED.runs/axi_lite_LFSR_PRNG_0_synth_1/axi_lite_LFSR_PRNG_0.vds
+# Journal file: /mnt/seagate/Development/FPGA/MB_LED/MB_LED.runs/axi_lite_LFSR_PRNG_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source axi_lite_LFSR_PRNG_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/seagate/Development/FPGA/IP_Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/seagate/Installed/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'axi_lite_LFSR_PRNG_0' generated file not found '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/axi_lite_LFSR_PRNG_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'axi_lite_LFSR_PRNG_0' generated file not found '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/axi_lite_LFSR_PRNG_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'axi_lite_LFSR_PRNG_0' generated file not found '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/axi_lite_LFSR_PRNG_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'axi_lite_LFSR_PRNG_0' generated file not found '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/axi_lite_LFSR_PRNG_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'axi_lite_LFSR_PRNG_0' generated file not found '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/axi_lite_LFSR_PRNG_0_sim_netlist.vhdl'. Please regenerate to continue.
+Command: synth_design -top axi_lite_LFSR_PRNG_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1030.305 ; gain = 188.770 ; free physical = 697 ; free virtual = 10625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'axi_lite_LFSR_PRNG_0' [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/synth/axi_lite_LFSR_PRNG_0.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter lfsr_width bound to: 31 - type: integer 
+	Parameter tap_1 bound to: 30 - type: integer 
+	Parameter tap_2 bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'axi_lite_LFSR_PRNG_v1_0' declared at '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0.vhd:5' bound to instance 'U0' of component 'axi_lite_LFSR_PRNG_v1_0' [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/synth/axi_lite_LFSR_PRNG_0.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_LFSR_PRNG_v1_0' [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0.vhd:51]
+	Parameter lfsr_width bound to: 31 - type: integer 
+	Parameter tap_1 bound to: 30 - type: integer 
+	Parameter tap_2 bound to: 27 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter lfsr_width bound to: 31 - type: integer 
+	Parameter tap_1 bound to: 30 - type: integer 
+	Parameter tap_2 bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'axi_lite_LFSR_PRNG_v1_0_S00_AXI' declared at '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:5' bound to instance 'axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst' of component 'axi_lite_LFSR_PRNG_v1_0_S00_AXI' [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_LFSR_PRNG_v1_0_S00_AXI' [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:88]
+	Parameter lfsr_width bound to: 31 - type: integer 
+	Parameter tap_1 bound to: 30 - type: integer 
+	Parameter tap_2 bound to: 27 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:243]
+INFO: [Synth 8-226] default block is never used [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:373]
+	Parameter lfsr_width bound to: 31 - type: integer 
+	Parameter tap_1 bound to: 30 - type: integer 
+	Parameter tap_2 bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'LFSR_v1' declared at '/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/src/LFSR_v1.vhd:38' bound to instance 'LFSR_0' of component 'LFSR_v1' [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'LFSR_v1' [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/src/LFSR_v1.vhd:58]
+	Parameter width bound to: 31 - type: integer 
+	Parameter tap_1 bound to: 30 - type: integer 
+	Parameter tap_2 bound to: 27 - type: integer 
+WARNING: [Synth 8-3819] Generic 'lfsr_width' not present in instantiated entity will be ignored [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:410]
+INFO: [Synth 8-256] done synthesizing module 'LFSR_v1' (1#1) [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/src/LFSR_v1.vhd:58]
+WARNING: [Synth 8-3848] Net o_number in module/entity axi_lite_LFSR_PRNG_v1_0_S00_AXI does not have driver. [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_LFSR_PRNG_v1_0_S00_AXI' (2#1) [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_LFSR_PRNG_v1_0' (3#1) [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/hdl/axi_lite_LFSR_PRNG_v1_0.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_LFSR_PRNG_0' (4#1) [/mnt/seagate/Development/FPGA/MB_LED/MB_LED.srcs/sources_1/ip/axi_lite_LFSR_PRNG_0/synth/axi_lite_LFSR_PRNG_0.vhd:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1069.684 ; gain = 228.148 ; free physical = 647 ; free virtual = 10585
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1069.684 ; gain = 228.148 ; free physical = 645 ; free virtual = 10584
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1392.137 ; gain = 1.000 ; free physical = 374 ; free virtual = 10353
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20403 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 326 ; free virtual = 10306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 326 ; free virtual = 10306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 326 ; free virtual = 10306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 326 ; free virtual = 10306
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               31 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LFSR_v1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               31 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+Module axi_lite_LFSR_PRNG_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 330 ; free virtual = 10310
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design axi_lite_LFSR_PRNG_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design axi_lite_LFSR_PRNG_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design axi_lite_LFSR_PRNG_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design axi_lite_LFSR_PRNG_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design axi_lite_LFSR_PRNG_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design axi_lite_LFSR_PRNG_0 has unconnected port s00_axi_arprot[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 327 ; free virtual = 10307
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 327 ; free virtual = 10307
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_rresp_reg[0] ' (FDRE) to '\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_rresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance '\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_bresp_reg[0] ' (FDRE) to '\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_bresp_reg[1] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_bresp_reg[1] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_bresp_reg[0] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_araddr_reg[1] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_araddr_reg[0] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_awaddr_reg[1] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_awaddr_reg[0] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_rresp_reg[1] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+INFO: [Synth 8-3332] Sequential element (\U0/axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst/axi_rresp_reg[0] ) is unused and will be removed from module axi_lite_LFSR_PRNG_0.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 326 ; free virtual = 10308
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 326 ; free virtual = 10308
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 91 ; free virtual = 10081
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 90 ; free virtual = 10080
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 71 ; free virtual = 10061
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 71 ; free virtual = 10061
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 71 ; free virtual = 10061
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 67 ; free virtual = 10057
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 67 ; free virtual = 10057
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 67 ; free virtual = 10057
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 67 ; free virtual = 10057
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 67 ; free virtual = 10057
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 67 ; free virtual = 10057
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |    33|
+|4     |LUT4 |    17|
+|5     |LUT5 |     3|
+|6     |LUT6 |    32|
+|7     |FDRE |   166|
+|8     |FDSE |    33|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------------------------------------+--------------------------------+------+
+|      |Instance                                 |Module                          |Cells |
++------+-----------------------------------------+--------------------------------+------+
+|1     |top                                      |                                |   287|
+|2     |  U0                                     |axi_lite_LFSR_PRNG_v1_0         |   287|
+|3     |    axi_lite_LFSR_PRNG_v1_0_S00_AXI_inst |axi_lite_LFSR_PRNG_v1_0_S00_AXI |   287|
+|4     |      LFSR_0                             |LFSR_v1                         |    94|
++------+-----------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 67 ; free virtual = 10057
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1392.137 ; gain = 107.379 ; free physical = 66 ; free virtual = 10056
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1392.137 ; gain = 550.602 ; free physical = 66 ; free virtual = 10056
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1392.137 ; gain = 476.266 ; free physical = 50 ; free virtual = 10035
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1424.156 ; gain = 0.000 ; free physical = 76 ; free virtual = 10026
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  5 13:32:26 2016...
